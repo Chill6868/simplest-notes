@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js #2</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- ICONS -->
+    <link rel="stylesheet" href="https://kit-pro.fontawesome.com/releases/v6.1.1/css/pro.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <!-- Modals -->
+    <div class="modal__shadow"></div>
+    <div class="modal__box modal__add-note">
+        <h3 class="modal__add-note__title">Add note</h3>
+        <div class="modal__add-note__info-box">
+            <div class="modal__add-note__input-box">
+                <label class="modal__add-note__label" for="input-note-category">Choose category</label>
+                <select class="modal__add-note__select" id="input-note-category">
+                    <option value="nonselected" selected disabled>- Choose category -</option>
+                    <option value="grocery">Grocery</option>
+                    <option value="work">Work</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="modal__add-note__input-box">
+                <label class="modal__add-note__label" for="input-note-content">Type note content</label>
+                <input class="modal__add-note__input" id="input-note-content" type="text">
+            </div>
+            <p class="modal__add-note__error">Complete All Fields!</p>
+        </div>
+        <div class="modal__add-note__btn-box">
+            <button class="modal__add-note__btn btn-save-note"><i class="fa-solid fa-floppy-disk"></i> Save
+                Note</button>
+            <button class="modal__add-note__btn modal__btn-close btn-cancel"><i class="fa-solid fa-ban"></i>
+                Cancel</button>
+        </div>
+    </div>
+
+    <!-- Main structure -->
+
+    <div class="top-bar">
+        <div class="wrapper">
+            <div class="top-bar__logo">
+                <i class="fa-solid fa-note-sticky"></i><span> MyNotes</span>
+            </div>
+            <div class="top-bar__btn-box">
+                <button class="top-bar__btn btn-add-note"><i class="fa-solid fa-plus"></i> Add Note</button>
+                <button class="top-bar__btn btn-remove-all-notes"><i class="fa-solid fa-trash"></i> Remove All</button>
+            </div>
+        </div>
+    </div>
+    <div class="wrapper">
+        <p class="note__no-notes-text">Add Notes using Add Note Button</p>
+        <div class="note__container"></div>
+    </div>
+
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
